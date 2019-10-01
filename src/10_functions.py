@@ -6,7 +6,14 @@
 num = input("Enter a number: ")
 num = int(num)
 
-# Print out "Even!" if the number is even. Otherwise print "Odd"
+def is_even(number):
+    return (number%2 == 0)
 
+print(is_even(num)) 
+
+# Print out "Even!" if the number is even. Otherwise print "Odd"
+def checkEven(number):
+    print('Even' if (number%2 ==0) else 'Odd')
+checkEven(num)
 # YOUR CODE HERE
 
