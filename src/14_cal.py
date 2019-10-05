@@ -21,4 +21,16 @@ and does the following:
 
 import sys
 import calendar
-from datetime import datetime
+from datetime import date
+ 
+x = sys.argv
+try:
+  if(len(x) ==1):
+    print(calendar.month(date.today().year, date.today().month))
+  if(len(x) ==2 ):
+      print(calendar.month(date.today().year ,int(x[1])))
+  if(len(x)== 3):
+      print(calendar.month(int(x[2]) , int(x[1])) , calendar.calendar(int(x[2])))
+except:
+  print('Format Expected: 02,2019;')
+  
